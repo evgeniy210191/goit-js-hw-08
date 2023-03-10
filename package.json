@@ -1,26 +1,26 @@
 {
-  "name": "parcel-project-template",
-  "version": "2.0.0",
+  "name": "goit-js-hw",
+  "version": "1.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "source": "index.html",
+  "homepage": "https://evgeniy210191.github.io/goit-js-hw",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "start": "parcel",
+    "build": "parcel build --public-url /goit-js-hw/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
-  },
-  "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
-  },
-  "dependencies": {
+  "devDependencies": {
     "modern-normalize": "^1.1.0"
   },
-  "devDependencies": {
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/evgeniy210191/goit-js-hw"
+  },
+  "dependencies": {
+    "@vimeo/player": "^2.18.0",
+    "lodash.throttle": "^4.1.1",
+    "simplelightbox": "^2.12.1",
     "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
