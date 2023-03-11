@@ -2,11 +2,11 @@
   "name": "goit-js-hw-08",
   "version": "1.0.0",
   "description": "",
-  "source": "index.html",
+  "source": "src/index.html",
   "homepage": "https://evgeniy210191.github.io/goit-js-hw-08",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
+    "start": "parcel",
+    "build": "parcel build --public-url /goit-js-hw-08/"
   },
   "author": "",
   "license": "ISC",
