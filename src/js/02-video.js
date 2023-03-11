@@ -24,7 +24,7 @@ player
     console.log(seconds);
   })
   .catch(function (error) {
-    document.body.innerHTML = `
+    video.innerHTML = `
       <img src="https://kartinkin.net/uploads/posts/2022-12/1670639655_1-kartinkin-net-p-kartinki-zagruzki-pinterest-1.png">
-    `
+    `;
   });
