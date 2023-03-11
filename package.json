@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "source": "index.html",
-  "homepage": "https://evgeniy210191.github.io/goit-js-hw",
+  "homepage": "https://evgeniy210191.github.io/goit-js-hw-08",
   "scripts": {
     "start": "parcel",
     "build": "parcel build --public-url /goit-js-hw/"
@@ -15,16 +15,16 @@
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/evgeniy210191/goit-js-hw"
+    "url": "https://github.com/evgeniy210191/goit-js-hw-08"
   },
   "dependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
     "@vimeo/player": "^2.18.0",
     "lodash.throttle": "^4.1.1",
-    "simplelightbox": "^2.12.1",
-    "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^1.7.4",
+    "simplelightbox": "^2.12.1"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
