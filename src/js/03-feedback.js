@@ -1,7 +1,6 @@
 import throttle from './fn03/api.js';
 const feedback_form_state = {};
 const form = document.querySelector('.feedback-form');
-console.log(form.name);
 
 form.addEventListener(
   'input',
@@ -11,6 +10,8 @@ form.addEventListener(
       'feedback-form-state',
       JSON.stringify(feedback_form_state)
     );
+    console.log(feedback_form_state);
+    
   }, 1000)
 );
 addEventListener('load', function (event) {
@@ -24,5 +25,5 @@ addEventListener('load', function (event) {
 form.addEventListener('submit', function (event) {
   event.preventDefault();
   localStorage.removeItem('feedback-form-state');
-  event.currentTarget.reset();
+  form.reset();
 });
