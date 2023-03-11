@@ -1,44 +1,33 @@
 import Player from '@vimeo/player';
-
+var throttle = require('lodash.throttle');
 const player = new Player('vimeo-player', {
   id: 19231868,
   width: 640,
+  loop: true,
 });
+const video = document.querySelector('#vimeo-player');
 
-// player.on('play', function () {
-//     duration: 61.857;
-//     percent: 0.049;
-//   seconds: 3.034;
-//   console.log('hello');
-//   
-// });
-const onPlay = function () {
-  console.log('hello');
-  
-};
+player.on(
+  'timeupdate',
+  throttle(data =>
+    localStorage.setItem('videoplayer-current-time', data.seconds)
+  , 1000)
+);
 
-player.on('play', onPlay);
-
-player.off('play', onPlay);
-
-const time = localStorage.getItem('time')
+const time = localStorage.getItem('videoplayer-current-time');
 
 player
   .setCurrentTime(time)
   .then(function (seconds) {
     console.log(seconds);
-    
   })
   .catch(function (error) {
-    switch (error.name) {
-      case 'RangeError':
-        console.log('seconds');// the time was less than 0 or greater than the video’s duration
-        break;
-
-      default:
-        console.log('seconds');// some other error occurred
-        break;
-    }
+    video.src =
+      'https://kartinkin.net/uploads/posts/2022-12/1670639655_1-kartinkin-net-p-kartinki-zagruzki-pinterest-1.png';
   });
 
-  // _.throttle(updatePosition, 100);
+// const dataPlay = {
+//   duration: 61.857,
+//   percent: 0.049,
+//   seconds: 3.034,
+// };
