@@ -21,7 +21,7 @@ const time = localStorage.getItem('videoplayer-current-time');
 player
   .setCurrentTime(time)
   .then(function (seconds) {
-  console.log(seconds);
+    console.log(seconds);
   })
   .catch(function (error) {
     video.innerHTML = `

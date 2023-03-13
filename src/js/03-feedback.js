@@ -10,8 +10,6 @@ form.addEventListener(
       'feedback-form-state',
       JSON.stringify(FeedbackFormState)
     );
-    
-    
   }, 1000)
 );
 addEventListener('load', function (event) {
@@ -23,16 +21,15 @@ addEventListener('load', function (event) {
     }
     if (dataParse.message) {
       form.elements.message.value = dataParse.message;
-    } 
-    return
+    }
+    return;
   }
 });
-
 
 form.addEventListener('submit', function (event) {
   event.preventDefault();
   if (form.elements.email.value === '' || form.elements.message.value === '') {
-    return
+    return;
   }
   console.log(FeedbackFormState);
   localStorage.removeItem('feedback-form-state');
